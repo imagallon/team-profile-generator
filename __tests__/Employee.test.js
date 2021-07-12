@@ -3,7 +3,7 @@ const Employee = require("../lib/Employee");
 describe("Employee", () => {
   describe("constructor", () => {
     it("sets name, id, and email", () => {
-      const name = "Israel";
+  
       const employee = new Employee("Israel", 5, "israel@email.com");
       expect(employee).toEqual({
         name: "Israel",
@@ -12,6 +12,15 @@ describe("Employee", () => {
       });
     });
   });
+
+  describe("getName", () => {
+    //arrange
+    const employee = new Employee("Israel", 5, "israel@email.com");
+    // act
+    const result = employee.getName();
+    //
+    expect(result).toBe("Israel")
+  })
 });
 // Properties:
 // -name: String - The employee's name. ("fred")
