@@ -22,8 +22,22 @@ officeNumber: Number - the managers - manager's office room number
 
 getRole(): String - overrides parent class to return 'Manager'
 ## engineer
+Inherits from employee
+properties:
+
+getGithub: String - gitHub account name
+
+
+getRole(): String - overrides parent class to return 'Engineer'
 
 ## intern
+Inherits from employee
+properties:
+
+getSchool: String - School name
+
+
+getRole(): String - overrides parent class to return 'Inturn'
 
 ## team
 
