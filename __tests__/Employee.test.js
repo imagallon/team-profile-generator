@@ -1,10 +1,9 @@
 const Employee = require("../lib/Employee");
+const employee = new Employee("Israel", 5, "israel@email.com");
 
 describe("Employee", () => {
   describe("constructor", () => {
     it("sets name, id, and email", () => {
-  
-      const employee = new Employee("Israel", 5, "israel@email.com");
       expect(employee).toEqual({
         name: "Israel",
         id: 5,
@@ -14,12 +13,23 @@ describe("Employee", () => {
   });
 
   describe("getName", () => {
-    //arrange
-    const employee = new Employee("Israel", 5, "israel@email.com");
-    // act
     const result = employee.getName();
-    //
-    expect(result).toBe("Israel")
+    expect(result).toBe("Israel");
+  });
+
+  describe("getId", () => {
+    const result = employee.getId();
+    expect(result).toBe(5);
+  });
+
+  describe("getEmail", () => {
+    const result = employee.getEmail();
+    expect(result).toBe("israel@email.com");
+  });
+
+  describe("getRoles", () => {
+    const result = employee.getRole()
+    expect(result).toBe("Employee");
   })
 });
 // Properties:
