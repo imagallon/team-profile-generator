@@ -51,21 +51,6 @@ const allIDS = [];
 //       },
 //     ],
 //   },
-//   {
-//     type: "input",
-//     message: "Enter Tests for your project",
-//     name: "tests",
-//   },
-//   {
-//     type: "input",
-//     message: "Enter Credits for your project",
-//     name: "credits",
-//   },
-//   {
-//     type: "list",
-//     message: "What license would you like yo use?",
-//     name: "license",
-//   },
 // ];
 
 function init() {
@@ -246,6 +231,18 @@ function init() {
     });
   }
 }
+
+function writeToFile(fileName, data) {
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
+
+
+
+
+
+
+
+
 
 //     Check if output directory exists if the output path doesn't exist.
 //     existsSync, writeFileSync, mkdirSync
