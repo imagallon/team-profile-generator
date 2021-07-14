@@ -18,40 +18,41 @@ function generateHtml(data) {
         <h1 class="display-4">My Team</h1>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">${data[0].name}</h5>
-        <p class="card-text">Manager</p>
+    <div class="container d-inline-flex">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${data[0].name}</h5>
+          <p class="card-text">Manager</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">ID: ${data[0].id}</li>
+          <li class="list-group-item"><a href="mailto:${data[0].email}">Email: ${data[0].email}</a></li>
+          <li class="list-group-item">Office number: ${data[0].officeNumber}</li>
+        </ul>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${data[0].id}</li>
-        <li class="list-group-item"><a href="mailto:${data[0].email}">Email: ${data[0].email}</a></li>
-        <li class="list-group-item">Office number: ${data[0].officeNumber}</li>
-      </ul>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">${data[1].name}</h5>
-        <p class="card-text">Engineer</p>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${data[1].name}</h5>
+          <p class="card-text">Engineer</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">ID: ${data[1].id}</li>
+          <li class="list-group-item"><a href="mailto:${data[1].email}">Email: ${data[1].email}</a></li>
+          <li class="list-group-item"><a href="https://github.com/${data[1].gitHubUserName}">GitHub: https://github.com/${data[1].gitHubUserName}</a></li>
+        </ul>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${data[1].id}</li>
-        <li class="list-group-item"><a href="mailto:${data[1].email}">Email: ${data[1].email}</a></li>
-        <li class="list-group-item"><a href="https://github.com/${data[1].gitHubUserName}">GitHub: https://github.com/${data[1].gitHubUserName}</a></li>
-      </ul>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">${data[2].name}</h5>
-        <p class="card-text">Intern</p>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${data[2].name}</h5>
+          <p class="card-text">Intern</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">ID: ${data[2].id}</li>
+          <li class="list-group-item"><a href="mailto:${data[2].email}">Email: ${data[2].email}</a></li>
+          <li class="list-group-item">School: ${data[2].school}</li>
+        </ul>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${data[2].id}</li>
-        <li class="list-group-item"><a href="mailto:${data[2].email}">Email: ${data[2].email}</a></li>
-        <li class="list-group-item">School: ${data[2].school}</li>
-      </ul>
     </div>
-  
   
   
   

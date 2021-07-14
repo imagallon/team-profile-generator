@@ -190,7 +190,7 @@ function createTeam() {
 
         default:
           console.log("good bye");
-          writeToFile("./teamArray.html", genHtml(teamMembers));
+          writeToFile("./dist/teamArray.html", genHtml(teamMembers));
       }
     })
   
